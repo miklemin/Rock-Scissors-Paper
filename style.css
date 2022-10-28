@@ -1,0 +1,142 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Secular+One&display=swap');
+font-family: 'Russo One', sans-serif;
+font-family: 'Secular One', sans-serif;*/
+
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 100;
+}
+
+main {
+    height: 90%;
+    width: 100%;
+    background-color: dodgerblue;
+    box-sizing: border-box;
+    padding: 2%;
+
+}
+
+.score {
+    width: 200px;
+    height: 80px;
+    border: 3px solid white;
+    margin: 0 auto;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.score::before{
+    content: 'user';
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: lime;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -20px;
+}
+
+.score::after {
+    content: 'comp';
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -20px;
+}
+
+.result {
+    font-size: 50px;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
+
+.options_block {
+    width: 55%;
+    height: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options {
+    width: 55%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option {
+    width: 105px;
+    height: 105px;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color .6s;
+
+}
+
+.options_block > h3{
+    font-family: 'Secular One', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.Rock {
+    background-image: url("./img/rock.png");
+
+}
+
+.Scissors {
+    background-image: url("./img/scissors.png");
+
+}
+
+.Paper {
+    background-image: url("./img/paper.png");
+
+}
+
+
+.win {
+    background-color: rgb(73, 143, 7);
+}
+
+.lose {
+    background-color: rgb(143, 7, 7);
+}
+
+.draw {
+    background-color: rgb(11, 84, 144);
+}
+
